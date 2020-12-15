@@ -68,7 +68,7 @@ body {
     position: relative;
     width: 320px;
     height: 465px;
-    background-image: url("/images/img_main_s.jZpg");
+    background-image: url("../images/img_main_s.jpg");
     background-position: center;
     background-size: 320px 465px;
     background-repeat: no-repeat;
@@ -455,7 +455,7 @@ body {
         position: relative;
         width: 768px;
         height: 457px;
-        background-image: url("/images/img_main_m.jpg");
+        background-image: url("../images/img_main_m.jpg");
         background-size: 768px 457px;
         background-position: center;
         background-repeat: no-repeat;
@@ -739,7 +739,7 @@ body {
         position: relative;
         width: 1280px;
         height: 673px;
-        background-image: url("/images/img_main.jpg");
+        background-image: url("../images/img_main.jpg");
         background-position: center;
         background-size: 1400px 673px;
     }
