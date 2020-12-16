@@ -24,6 +24,7 @@ nav{
     height: 45px;
     background: #2a313a;
     display: flex;
+    position: relative;
 }
 
 .logo_block {
@@ -34,8 +35,8 @@ nav{
 }
 
 .logo {
-    width: 385px;
-    height: 87px;
+    width: 150px;
+    height: 45px;
 }
 
 .head_nav {
@@ -45,6 +46,21 @@ nav{
     width: 552px;
     height: 87px;
     justify-content: space-between;
+    display: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.menu-click{
+    display: block;
+}
+.nav_menu{
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #E3E3E3;
 }
 
 .nav_btn {
@@ -67,6 +83,7 @@ nav{
     font-size: 18px;
     color: #E3E3E3;
     float: right;
+    margin-right: 50px;
 }
 nav a{
     margin: auto;
@@ -472,6 +489,14 @@ nav a{
         list-style: none;
         font-size: 14px;
         color: #E3E3E3;
+    }
+    .nav_menu{
+        display: none;
+    }
+    .head_nav{
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
     /* 圖片切換 */
     .slider_img1 {
