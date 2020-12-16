@@ -56,9 +56,9 @@ nav{
 }
 .nav_menu{
     display: block;
-    font-size: 20px;
+    font-size: 30px;
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 10px;
     color: #E3E3E3;
 }
@@ -84,6 +84,10 @@ nav{
     color: #E3E3E3;
     float: right;
     margin-right: 50px;
+}
+#login_btn:hover{
+    color: fff;
+    background-color: #A3BBD0;
 }
 nav a{
     margin: auto;
@@ -138,7 +142,11 @@ nav a{
     text-align: center;
     font-family: 'Rationale', sans-serif;
 }
-
+.btn_box:hover{
+    color: #fff;
+    background-color: #A3BBD0;
+    border: 3px solid #fff;
+}
 /* 下方導覽列 */
 
 .game_body {
@@ -214,9 +222,15 @@ nav a{
     border-width: 13px 7px 0 7px;
     border-color: #E3E3E3 transparent transparent transparent;
 }
-
+.nav1:hover{
+    background-color: #4B5964;
+}
 /* 熱門免費遊戲 */
-
+.download_btn:hover{
+    background-color: #aec0cf;
+    color: #fff;
+    border: 1px solid #fff;
+}
 .hotgame_text {
     margin: 20px;
     margin-top: 70px;
@@ -292,7 +306,11 @@ nav a{
     line-height: 18px;
     font-size: 14px;
 }
-
+.seemore_btn:hover{
+    border: 1px solid #fff;
+    color: #000;
+    background-color: #fff;
+}
 .img_game {
     width: 256px;
     height: 121px;
@@ -382,6 +400,11 @@ nav a{
 }
 .m6{
     margin-bottom: 0;
+}
+.item_btn:hover{
+    background: linear-gradient( 45deg, rgba(66, 84, 105, 0.5) 0, rgba(66, 84, 105, 0.5) 25%, rgba(108, 130, 151, 0.5) 25%, rgba(108, 130, 151, 0.5) 50%, rgba(66, 84, 105, 0.5) 50%, rgba(66, 84, 105, 0.5) 75%, rgba(108, 130, 151, 0.5) 75%, rgba(108, 130, 151, 0.5));
+    background-size: 50px 50px;
+    color: #DDEFFF;
 }
 /* footer  */
 
