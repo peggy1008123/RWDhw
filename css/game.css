@@ -1,7 +1,7 @@
 .container {
     position: relative;
     max-width: 320px;
-    min-height: 2300px;
+    min-height: 2100px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -9,23 +9,24 @@
 body {
     background: #3C464F;
     height: 2300px;
-    background: linear-gradient(180deg, #3C464F 46.35%, 
-    rgba(65, 75, 85, 0.992108) 63.02%, rgba(121, 142, 162, 0.9) 99.15%, 
-    rgba(121, 142, 162, 0.677083) 99.16%, rgba(140, 157, 173, 0.81) 99.17%,
-        rgba(121, 142, 162, 0.59375) 99.99%, rgba(121, 142, 162, 0) 100%);
+    background: linear-gradient(180deg, #3C464F 46.35%, rgba(65, 75, 85, 0.992108) 63.02%, rgba(121, 142, 162, 0.9) 99.15%, rgba(121, 142, 162, 0.677083) 99.16%, rgba(140, 157, 173, 0.81) 99.17%, rgba(121, 142, 162, 0.59375) 99.99%, rgba(121, 142, 162, 0) 100%);
 }
 
+
 /* 上方導覽列 */
-nav{
+
+nav {
     display: flex;
 }
-.wrap{
+
+.wrap {
     width: 320px;
     height: 45px;
     display: flex;
     position: relative;
     margin: auto;
 }
+
 .header {
     width: 100%;
     height: 45px;
@@ -47,33 +48,49 @@ nav{
 }
 
 .head_nav {
-    margin-top: 0%;
-    margin-left: 250px;
-    display: flex;
-    width: 552px;
-    height: 87px;
-    justify-content: space-between;
-    display: none;
-    flex-wrap: wrap;
+    position: absolute;
     margin: 0;
     padding: 0;
+    right: 0%;
+    top: 45px;
+    width: 100%;
+    height: fit;
+    display: none;
+    flex-wrap: wrap;
+    z-index: 99;
+    background-color: #2a313a;
 }
-.menu-click{
+
+.menu_click {
     display: block;
+    opacity: 1;
+    transition: ease-out;
 }
-.nav_menu{
+
+.nav_menu {
     display: block;
+    cursor: pointer;
     font-size: 30px;
     position: absolute;
     top: 5px;
+    z-index: 100;
     right: 10px;
     color: #E3E3E3;
 }
 
 .nav_btn {
-    margin: auto;
+    padding: 10px;
     list-style: none;
-    font-size: 18px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.nav_btn:hover {
+    background-color: #1b232c;
+}
+
+.nav_btn a {
+    text-decoration: none;
     color: #E3E3E3;
 }
 
@@ -92,14 +109,18 @@ nav{
     float: right;
     margin-right: 50px;
 }
-#login_btn:hover{
+
+#login_btn:hover {
     color: fff;
     background-color: #A3BBD0;
 }
-nav a{
+
+nav a {
     margin: auto;
     margin-right: 10px;
 }
+
+
 /* 圖片切換 */
 
 .slider_img1 {
@@ -149,11 +170,14 @@ nav a{
     text-align: center;
     font-family: 'Rationale', sans-serif;
 }
-.btn_box:hover{
+
+.btn_box:hover {
     color: #fff;
     background-color: #A3BBD0;
     border: 3px solid #fff;
 }
+
+
 /* 下方導覽列 */
 
 .game_body {
@@ -187,17 +211,19 @@ nav a{
     height: 26px;
     background: #3C464F;
 }
+
 .search_btn img {
     width: 25px;
     height: 25px;
 }
+
 .nav1 {
     display: flex;
     width: 130px;
     height: 31px;
 }
 
-#nav1{
+#nav1 {
     border-right: 1px solid;
 }
 
@@ -206,13 +232,14 @@ nav a{
 }
 
 .myshop {
-    margin-left:31px;
+    margin-left: 31px;
     text-align: center;
     font-size: 14px;
     line-height: 31px;
     color: #E3E3E3;
 }
-#seemore{
+
+#seemore {
     margin-left: 45px;
 }
 
@@ -229,15 +256,20 @@ nav a{
     border-width: 13px 7px 0 7px;
     border-color: #E3E3E3 transparent transparent transparent;
 }
-.nav1:hover{
+
+.nav1:hover {
     background-color: #4B5964;
 }
+
+
 /* 熱門免費遊戲 */
-.download_btn:hover{
+
+.download_btn:hover {
     background-color: #aec0cf;
     color: #fff;
     border: 1px solid #fff;
 }
+
 .hotgame_text {
     margin: 20px;
     margin-top: 70px;
@@ -282,8 +314,8 @@ nav a{
     width: 228px;
     height: 161px;
     padding-left: 24px;
-
 }
+
 
 /* 下方遊戲列 */
 
@@ -313,11 +345,13 @@ nav a{
     line-height: 18px;
     font-size: 14px;
 }
-.seemore_btn:hover{
+
+.seemore_btn:hover {
     border: 1px solid #fff;
     color: #000;
     background-color: #fff;
 }
+
 .img_game {
     width: 256px;
     height: 121px;
@@ -369,7 +403,7 @@ nav a{
 
 .price {
     font-family: 'Rationale', sans-serif;
-    font-size:18px;
+    font-size: 18px;
     line-height: 35px;
     text-align: center;
     color: #E3E3E3;
@@ -379,6 +413,7 @@ nav a{
 #title2 {
     margin-left: 35px;
 }
+
 .item_btn {
     text-align: center;
     font-size: 18px;
@@ -402,26 +437,36 @@ nav a{
     flex-flow: row wrap;
 }
 
-.boxa{
+.boxa {
     margin-bottom: 10px;
 }
-.m6{
+
+.m6 {
     margin-bottom: 0;
 }
-.item_btn:hover{
+
+.item_btn:hover {
     background: linear-gradient( 45deg, rgba(66, 84, 105, 0.5) 0, rgba(66, 84, 105, 0.5) 25%, rgba(108, 130, 151, 0.5) 25%, rgba(108, 130, 151, 0.5) 50%, rgba(66, 84, 105, 0.5) 50%, rgba(66, 84, 105, 0.5) 75%, rgba(108, 130, 151, 0.5) 75%, rgba(108, 130, 151, 0.5));
     background-size: 50px 50px;
     color: #DDEFFF;
 }
+
+
 /* footer  */
 
 .footer_container {
-    position: absolute;
-    bottom: 0;
+    position: relative;
     margin-top: 20px;
-    width: 320px;
+    width: 100%;
     height: 112px;
     background: #2a313a;
+}
+
+.footer_wrap {
+    padding-top: 5px;
+    margin: auto;
+    width: 320px;
+    height: 112px;
 }
 
 .footer_btn {
@@ -448,7 +493,6 @@ nav a{
 }
 
 .language_option {
-    margin-top: 5px;
     margin-left: 105px;
 }
 
@@ -458,34 +502,44 @@ nav a{
     color: #E3E3E3;
 }
 
+select,
+option {
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+
 /* 熱門免費遊戲RWD */
 
 * {
     box-sizing: border-box;
 }
 
-.m1, .m2, .m3, .m4, .m5, .m6 {
+.m1,
+.m2,
+.m3,
+.m4,
+.m5,
+.m6 {
     width: 100%;
 }
+
 
 /* @media (min-width: 320px) {
 
 } */
 
 @media (min-width: 768px) {
-    body{
+    body {
         height: 1810px;
-        background: linear-gradient(180deg, #3C464F 46.35%, 
-        rgba(65, 75, 85, 0.992108) 63.02%, rgba(121, 142, 162, 0.9) 99.15%, 
-        rgba(121, 142, 162, 0.677083) 99.16%, rgba(140, 157, 173, 0.81) 99.17%,
-         rgba(121, 142, 162, 0.59375) 99.99%, rgba(121, 142, 162, 0) 100%);
+        background: linear-gradient(180deg, #3C464F 46.35%, rgba(65, 75, 85, 0.992108) 63.02%, rgba(121, 142, 162, 0.9) 99.15%, rgba(121, 142, 162, 0.677083) 99.16%, rgba(140, 157, 173, 0.81) 99.17%, rgba(121, 142, 162, 0.59375) 99.99%, rgba(121, 142, 162, 0) 100%);
     }
     .container {
         max-width: 768px;
         min-height: 1300px;
     }
     /* 上方導覽列 */
-    .wrap{
+    .wrap {
         width: 768px;
         height: 45px;
         display: flex;
@@ -509,10 +563,14 @@ nav a{
         height: 50px;
     }
     .head_nav {
+        position: relative;
+        top: 0;
+        background-color: transparent;
         margin-top: 9px;
-        margin-left: 0px;
-        width: 420px;
+        margin-right: 20px;
+        width: 300px;
         height: 31px;
+        justify-content: space-between;
     }
     #login_btn {
         width: 82px;
@@ -527,13 +585,14 @@ nav a{
         font-size: 14px;
         color: #E3E3E3;
     }
-    .nav_menu{
+    .nav_menu {
         display: none;
     }
-    .head_nav{
+    .head_nav {
         display: block;
         display: flex;
         flex-wrap: wrap;
+        position: relative;
     }
     /* 圖片切換 */
     .slider_img1 {
@@ -646,9 +705,8 @@ nav a{
         height: 25px;
         font-size: 14px;
     }
-    
     /* 優惠遊戲 */
-    .maingame_container{
+    .maingame_container {
         width: 680px;
         height: 640px;
         margin-top: 40px;
@@ -657,7 +715,8 @@ nav a{
         width: 680px;
         height: 18px;
     }
-    .other_item_btn, .discount_shop {
+    .other_item_btn,
+    .discount_shop {
         margin-top: 14px;
         width: 671px;
     }
@@ -666,7 +725,7 @@ nav a{
         justify-content: space-between;
         width: 680px;
         margin: auto;
-        margin-top: 20px;   
+        margin-top: 20px;
         flex-flow: row wrap;
     }
     .img_game {
@@ -693,10 +752,14 @@ nav a{
         line-height: 46px;
         margin-right: 5px;
     }
-    .m1, .m2, .m3 {
+    .m1,
+    .m2,
+    .m3 {
         width: 48.5%;
     }
-    .m4, .m5, .m6 {
+    .m4,
+    .m5,
+    .m6 {
         width: 48.5%;
     }
     .t1 {
@@ -736,13 +799,10 @@ nav a{
         height: 38px;
         background: #728E78;
     }
-    
     /* 頁腳 */
     .footer_container {
-        position: absolute;
-        bottom: auto;
+        position: relative;
         margin-top: 20px;
-        width: 768px;
         height: 73px;
         background: #2a313a;
         display: flex;
@@ -778,28 +838,32 @@ nav a{
         color: #E3E3E3;
         margin-left: 220px;
     }
-    select, option {
+    .footer_wrap {
+        margin: auto;
+        width: 768px;
+        height: 73px;
+        display: flex;
+    }
+    select,
+    option {
         font-size: 14px;
     }
 }
 
 @media (min-width: 1280px) {
-    body{
-        height: 2010px;
-        background: linear-gradient(180deg, #3C464F 46.35%, 
-        rgba(65, 75, 85, 0.992108) 63.02%, rgba(121, 142, 162, 0.9) 99.15%, 
-        rgba(121, 142, 162, 0.677083) 99.16%, rgba(140, 157, 173, 0.81) 99.17%,
-         rgba(121, 142, 162, 0.59375) 99.99%, rgba(121, 142, 162, 0) 100%);
+    body {
+        height: 1960px;
+        background: linear-gradient(180deg, #3C464F 46.35%, rgba(65, 75, 85, 0.992108) 63.02%, rgba(121, 142, 162, 0.9) 99.15%, rgba(121, 142, 162, 0.677083) 99.16%, rgba(140, 157, 173, 0.81) 99.17%, rgba(121, 142, 162, 0.59375) 99.99%, rgba(121, 142, 162, 0) 100%);
     }
     .container {
         max-width: 1280px;
-        min-height: 2000px;
+        min-height: 1810px;
     }
     /* 上方導覽列 */
     .header {
         height: 87px;
     }
-    .wrap{
+    .wrap {
         width: 1280px;
         height: 78px;
         display: flex;
@@ -822,6 +886,7 @@ nav a{
         margin-right: 10px;
         width: 550px;
         height: 87px;
+        justify-content: space-between;
     }
     .nav_btn {
         margin: auto;
@@ -840,7 +905,7 @@ nav a{
         font-size: 18px;
         color: #E3E3E3;
     }
-    nav a{
+    nav a {
         margin: auto;
         margin-right: 10px;
     }
@@ -970,7 +1035,7 @@ nav a{
         width: 360px;
         height: 149px;
     }
-    .maingame_container{
+    .maingame_container {
         width: 1126px;
         height: 430px;
         margin: auto;
@@ -979,7 +1044,8 @@ nav a{
         width: 1126px;
         height: 32px;
     }
-    .other_item_btn, .discount_shop {
+    .other_item_btn,
+    .discount_shop {
         width: 1126px;
     }
     .price_bar {
@@ -989,10 +1055,14 @@ nav a{
     .price {
         margin-right: 20px;
     }
-    .m1, .m2, .m3 {
+    .m1,
+    .m2,
+    .m3 {
         width: 32%;
     }
-    .m4, .m5, .m6 {
+    .m4,
+    .m5,
+    .m6 {
         width: 32%;
     }
     .t1 {
@@ -1024,10 +1094,8 @@ nav a{
     }
     /* 頁腳 */
     .footer_container {
-        position: absolute;
-        bottom: auto;
+        position: relative;
         margin-top: 20px;
-        width: 1280px;
         height: 73px;
         background: #2a313a;
         display: flex;
@@ -1065,7 +1133,13 @@ nav a{
         position: absolute;
         right: 6%;
     }
-    select, option {
+    .footer_wrap {
+        margin: auto;
+        width: 1280px;
+        height: 73px;
+    }
+    select,
+    option {
         font-size: 18px;
     }
 }
