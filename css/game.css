@@ -36,7 +36,7 @@ nav {
 }
 
 .logo_block {
-    margin-top: 0;
+    margin-top: 3px;
     overflow: hidden;
     width: 440px;
     height: 78px;
@@ -44,7 +44,11 @@ nav {
 
 .logo {
     width: 150px;
-    height: 45px;
+    height: 40px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .head_nav {
@@ -85,8 +89,8 @@ nav {
     text-align: center;
 }
 
-.nav_btn:hover {
-    background-color: #1b232c;
+.nav_btn a:hover {
+    color: rgb(95, 97, 99);
 }
 
 .nav_btn a {
@@ -219,12 +223,12 @@ nav a {
 
 .nav1 {
     display: flex;
-    width: 130px;
+    width: 124px;
     height: 31px;
 }
 
 #nav1 {
-    border-right: 1px solid;
+    border-right: 1px solid #000;
 }
 
 #nav2 {
@@ -344,6 +348,10 @@ nav a {
     text-align: center;
     line-height: 18px;
     font-size: 14px;
+}
+
+.maingamebox a {
+    width: 70px;
 }
 
 .seemore_btn:hover {
@@ -502,6 +510,14 @@ nav a {
     color: #E3E3E3;
 }
 
+.footer_btn a {
+    color: #E3E3E3;
+}
+
+.footer_btn a:hover {
+    color: #787a7c;
+}
+
 select,
 option {
     font-size: 14px;
@@ -560,13 +576,13 @@ option {
     }
     .logo {
         width: 201px;
-        height: 50px;
+        height: 45px;
     }
     .head_nav {
         position: relative;
         top: 0;
         background-color: transparent;
-        margin-top: 9px;
+        margin-top: 5px;
         margin-right: 20px;
         width: 300px;
         height: 31px;
@@ -652,6 +668,7 @@ option {
     }
     #nav2 {
         width: 100px;
+        border-right: 1px solid #000;
     }
     #nav_btn2 {
         margin-top: 12%;
@@ -712,13 +729,14 @@ option {
         margin-top: 40px;
     }
     .maingamebox {
-        width: 680px;
+        width: 580px;
         height: 18px;
     }
     .other_item_btn,
     .discount_shop {
         margin-top: 14px;
         width: 671px;
+        margin-left: -50px;
     }
     .other_item_btn {
         display: flex;
@@ -878,7 +896,7 @@ option {
     }
     .logo {
         width: 385px;
-        height: 87px;
+        height: 80px;
     }
     .head_nav {
         margin-top: 0%;
@@ -1026,7 +1044,7 @@ option {
         height: 230px;
     }
     .free {
-        width: 230px;
+        width: 250px;
         height: 230px;
         /* margin: auto; */
     }
@@ -1041,7 +1059,7 @@ option {
         margin: auto;
     }
     .maingamebox {
-        width: 1126px;
+        width: 1000px;
         height: 32px;
     }
     .other_item_btn,
@@ -1066,11 +1084,10 @@ option {
         width: 32%;
     }
     .t1 {
-        width: 90%;
+        width: 70%;
+        margin-left: -62px;
     }
-    .t2 {
-        width: 10%;
-    }
+    .t2 {}
     .item_btn {
         line-height: 84px;
         font-size: 24px;
@@ -1093,6 +1110,11 @@ option {
         margin-left: 75px;
     }
     /* 頁腳 */
+    .footer_wrap {
+        width: 1280px;
+        height: 73px;
+        display: flex;
+    }
     .footer_container {
         position: relative;
         margin-top: 20px;
@@ -1114,11 +1136,16 @@ option {
         height: 29px;
         justify-content: space-between;
     }
+    .footer_btn a {
+        color: #E3E3E3;
+    }
+    .footer_btn a:hover {
+        color: #787a7c;
+    }
     .copyright {
         font-size: 18px;
         line-height: 21px;
         color: #E3E3E3;
-        left: 3%;
         width: 400px;
         height: 27px;
         font-family: 'Rationale', sans-serif;
@@ -1127,16 +1154,15 @@ option {
     }
     .language_option {
         margin-top: 25px;
-        margin-left: 50px;
-    }
-    .form {
-        position: absolute;
-        right: 6%;
+        margin-right: 0px;
     }
     .footer_wrap {
         margin: auto;
         width: 1280px;
         height: 73px;
+    }
+    .form {
+        margin-left: 1030px;
     }
     select,
     option {
